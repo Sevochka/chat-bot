@@ -1,0 +1,114 @@
+{
+  "goods": [
+    {
+      "name": "Жесткий диск Seagate BarraCuda",
+      "price": "3 990",
+      "vendor": "Seagate",
+      "capacity": "1 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 6Gb/s",
+      "rotation_speed": "7200 об/мин",
+      "cache": "64 МБ",
+      "warranty": "3 года"
+    },
+    {
+      "name": "Жесткий диск Toshiba DT01",
+      "price": "3 990",
+      "vendor": "Toshiba",
+      "capacity": "1 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 6Gb/s",
+      "rotation_speed": "7200 об/мин",
+      "cache": "64 МБ",
+      "warranty": "3 года"
+    },
+    {
+      "name": "Жесткий диск WD Blue",
+      "price": "2 000",
+      "vendor": "Western Digital",
+      "capacity": "1 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 6Gb/s",
+      "rotation_speed": "7200 об/мин",
+      "cache": "64 МБ",
+      "warranty": "3 года"
+    },
+    {
+      "name": "Жесткий диск Toshiba P300",
+      "price": "3 990",
+      "vendor": "Toshiba",
+      "capacity": "1 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 6Gb/s",
+      "rotation_speed": "7200 об/мин",
+      "cache": "64 МБ",
+      "warranty": "3 года"
+    },
+    {
+      "name": "Жесткий диск WD Red",
+      "price": "3 990",
+      "vendor": "Western Digital",
+      "capacity": "1 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 6Gb/s",
+      "rotation_speed": "5400 об/мин",
+      "cache": "64 МБ",
+      "warranty": "3 года"
+    },
+    {
+      "name": "Жесткий диск Seagate SkyHawk",
+      "price": "3 599",
+      "vendor": "Seagate",
+      "capacity": "2 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 6Gb/s",
+      "rotation_speed": "5900 об/мин",
+      "cache": "64 МБ",
+      "warranty": "3 года"
+    },
+    {
+      "name": "Внешний HDD Toshiba Canvio Basics",
+      "price": "5 990",
+      "vendor": "Toshiba",
+      "capacity": "2 ТБ",
+      "form_factor": "2.5",
+      "interface": "USB 3.0",
+      "rotation_speed": "5400 об/мин",
+      "cache": "8 МБ",
+      "warranty": "3 года"
+    },
+    {
+      "name": "Жесткий диск WD Purple Surveillance",
+      "price": "3 990",
+      "vendor": "Western Digital",
+      "capacity": "2 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 6Gb/s",
+      "rotation_speed": "5400 об/мин",
+      "cache": "64 МБ",
+      "warranty": "3 года"
+    },
+    {
+      "name": "Жесткий диск Seagate IronWolf",
+      "price": "3 990",
+      "vendor": "Seagate",
+      "capacity": "2 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 6Gb/s",
+      "rotation_speed": "5900 об/мин",
+      "cache": "64 МБ",
+      "warranty": "3 года"
+    },
+    {
+      "name": "Жесткий диск Toshiba P300",
+      "price": "4 990",
+      "vendor": "Toshiba",
+      "capacity": "3 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 6Gb/s",
+      "rotation_speed": "7200 об/мин",
+      "cache": "64 МБ",
+      "warranty": "3 года"
+    }
+  ]
+}
