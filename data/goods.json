@@ -109,6 +109,17 @@
       "rotation_speed": "7200 об/мин",
       "cache": "64 МБ",
       "warranty": "3 года"
+    },
+     {
+      "name": "Жесткий диск Toshiba P600",
+      "price": "2 900",
+      "vendor": "Toshiba",
+      "capacity": "1 ТБ",
+      "form_factor": "3.5",
+      "interface": "SATA 8Gb/s",
+      "rotation_speed": "7200 об/мин",
+      "cache": "128 МБ",
+      "warranty": "2 года"
     }
   ]
 }

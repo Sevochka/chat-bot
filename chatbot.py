@@ -4,7 +4,7 @@ import nltk
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from get_additional_data import data_by_intent, intent_in_data, add_additional_data_to_answer_by_intent
+from get_additional_data import add_additional_data_to_answer_by_intent
 
 
 def convert_structure(data):
@@ -160,17 +160,6 @@ def getResponse(replica):
     # берем заглушку
     stats['failure'] += 1
     return [get_failure_phrase()]
-
-
-def start_chatbot():
-    print("Привет, я чатбот! Я могу многое, к примеру поговорить о погоде.")
-    while True:
-        # Get a message from the user
-        message = input("Вы: ")
-
-        response = getResponse(message)
-        # Print the response
-        print("Бот:", response.answer)
 
 
 print('Chatbot: Done')

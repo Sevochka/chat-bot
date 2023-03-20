@@ -1,8 +1,10 @@
 import telebot
 from telebot import types
 from chatbot import getResponse
+from aiml_bot import getAimlResponse
+from check_language import checkIsRussian, checkIsEnglish
 
-bot = telebot.TeleBot('Ключ телеграмм. Скрыт на гитхабе')
+bot = telebot.TeleBot('5807632118:AAGTEY5tZcDYUW72H7NXFpsIy2BmCiF83ms')
 
 
 @bot.message_handler(commands=['start'])
@@ -13,6 +15,8 @@ def start(message):
     markup.add(btn1)
     bot.send_message(message.from_user.id, "👋 Привет! Я твой бот-помошник!", reply_markup=markup)
 
+def getBtn4():
+    return types.KeyboardButton("🧭Sklearn модель (Русский)" if isAIML else "🧭AIML модель (Английский)")
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
@@ -23,8 +27,21 @@ def get_text_messages(message):
     btn3 = types.KeyboardButton("💿 Жесткие диски")
     markup.add(btn1, btn2, btn3)
 
+    markup.add(getBtn4())
+
     if message.text == '👋 Поздороваться':
         bot.send_message(message.from_user.id, '❓ Задайте интересующий вас вопрос', reply_markup=markup)
+        return True
+
+    is_russian = checkIsRussian(message.text)
+    is_english = checkIsEnglish(message.text)
+
+    if not is_russian and not is_english:
+        bot.send_message(message.from_user.id, '❓ Задайте интересующий вас вопрос на русском или английском языке', reply_markup=markup)
+        return True
+
+    if is_english:
+        bot.send_message(message.from_user.id, getAimlResponse(message.text), reply_markup=markup)
         return True
 
     response = getResponse(message.text)

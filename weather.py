@@ -1,6 +1,6 @@
 import requests
 
-api_key = "Ключ от API. Скрыт на GitHub."
+api_key = "dd6e423f7f036699ea3033727eef6c94"
 base_url = "https://api.openweathermap.org/data/2.5/weather?units=metric&lang=ru&appid=" + api_key
 
 
