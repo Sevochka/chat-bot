@@ -1,7 +1,7 @@
 import os
 import aiml
 
-BRAIN_FILE="brain.dump"
+BRAIN_FILE= "../brain.dump"
 
 k = aiml.Kernel()
 

@@ -4,7 +4,7 @@ import nltk
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from get_additional_data import add_additional_data_to_answer_by_intent
+from utils.get_additional_data import add_additional_data_to_answer_by_intent
 
 
 def convert_structure(data):
@@ -23,7 +23,7 @@ def convert_structure(data):
     }
 
 
-with open('data/intents.json', encoding='utf-8') as file:
+with open('./data/intents.json', encoding='utf-8') as file:
     BOT_CONFIG = convert_structure(json.load(file))
 
 X_text = []
@@ -68,7 +68,7 @@ def get_answer_by_intent(intent):
             return random.choice(responses)
 
 
-with open('data/chan_dialogues.txt') as f:
+with open('./data/dialogues.txt') as f:
     content = f.read()
 
 dialogues_str = content.split('\n\n')

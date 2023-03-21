@@ -1,11 +1,11 @@
 import json
 from random import randint
 
-import weather
-import get_dog
+import utils.weather as weather
+import utils.get_dog as get_dog
 from datetime import datetime
 
-with open('data/goods.json', encoding='utf-8') as file:
+with open('./data/goods.json', encoding='utf-8') as file:
     data = json.load(file)
     GOODS = data["goods"]
 
